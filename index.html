@@ -5,8 +5,106 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-header">
+      <div class="header-conteiner-logo">
+        <a class="header-logo-link" href="index.html">
+          <img class="header-logo" src="" alt="Логотип интернет-магазина «Девайс»">
+        </a>
+      </div>
+      <div class="header-conteiner">
+        <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="header-search" for="page-search">
+            <span class="visually-hidden">
+              Поиск по сайту
+            </span>
+          </label>
+          <input type="search" name="page-search" id="page-search" placeholder="Текст поиска">
+          <input type="submit" value="Найти">
+        </form>
+        <ul class="header-user-menu-list">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#">
+              Вход
+            </a>
+          </li>
+        </ul>
+        <ul class="hheader-user-menu user-menu-list">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#">
+              Сравнить
+            </a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#">
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation-menu-list">
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">
+              Каталог товаров
+            </a>
+            <ul class="navigation-catalog-menu-list">
+              <li class="navigation-catalog-menu-item">
+                <ul class="navigation-catalog-submenu-list">
+                  <li class="navigation-catalog-submenu-item">
+                    <a class="navigation-catalog-submenu-link" href="#">
+                      Виртуальная реальность
+                    </a>
+                  </li>
+                  <li class="navigation-catalog-submenu-item">
+                    <a class="navigation-catalog-submenu-link" href="#">
+                      Моноподы для cелфи
+                    </a>
+                  </li>
+                  <li class="navigation-catalog-submenu-item">
+                    <a class="navigation-catalog-submenu-link" href="#">
+                      Экшн-камеры
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navigation-catalog-submenu-list">
+                  <li class="navigation-catalog-submenu-item">
+                    <a class="navigation-catalog-submenu-link" href="#">
+                      Фитнес-браслеты
+                    </a>
+                  </li>
+                  <li class="navigation-catalog-submenu-item">
+                    <a class="navigation-catalog-submenu-link" href="#">
+                      Умные часы
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navigation-catalog-submenu-list">
+                  <li class="navigation-catalog-submenu-item">
+                    <a class="navigation-catalog-submenu-link" href="#">
+                      Квадрокоптеры
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">
+              Гарантия
+            </a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
