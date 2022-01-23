@@ -6,20 +6,16 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-conteiner-logo">
-        <a class="header-logo-link" href="index.html">
-          <img class="header-logo" src="" alt="Логотип интернет-магазина «Девайс»">
-        </a>
-      </div>
+      <a class="header-logo-link" href="index.html">
+        <img class="header-logo" src="" alt="Логотип интернет-магазина «Девайс»">
+      </a>
       <div class="header-conteiner">
         <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="header-search" for="page-search">
-            <span class="visually-hidden">
-              Поиск по сайту
-            </span>
+          <label class="visually-hidden" for="page-search">
+            Поиск по сайту
           </label>
           <input type="search" name="page-search" id="page-search" placeholder="Текст поиска">
-          <input type="submit" value="Найти">
+          <button type="submit">Найти</button>
         </form>
         <ul class="header-user-menu-list">
           <li class="header-menu-item">
@@ -30,9 +26,9 @@
         </ul>
         <ul class="hheader-user-menu user-menu-list">
           <li class="header-menu-item">
-            <a class="header-menu-link" href="#">
+            <button class="header-menu-button" type="button">
               Сравнить
-            </a>
+            </button>
           </li>
           <li class="header-menu-item">
             <a class="header-menu-link" href="#">
@@ -49,42 +45,34 @@
             </a>
             <ul class="navigation-catalog-menu-list">
               <li class="navigation-catalog-menu-item">
-                <ul class="navigation-catalog-submenu-list">
-                  <li class="navigation-catalog-submenu-item">
-                    <a class="navigation-catalog-submenu-link" href="#">
-                      Виртуальная реальность
-                    </a>
-                  </li>
-                  <li class="navigation-catalog-submenu-item">
-                    <a class="navigation-catalog-submenu-link" href="#">
-                      Моноподы для cелфи
-                    </a>
-                  </li>
-                  <li class="navigation-catalog-submenu-item">
-                    <a class="navigation-catalog-submenu-link" href="#">
-                      Экшн-камеры
-                    </a>
-                  </li>
-                </ul>
-                <ul class="navigation-catalog-submenu-list">
-                  <li class="navigation-catalog-submenu-item">
-                    <a class="navigation-catalog-submenu-link" href="#">
-                      Фитнес-браслеты
-                    </a>
-                  </li>
-                  <li class="navigation-catalog-submenu-item">
-                    <a class="navigation-catalog-submenu-link" href="#">
-                      Умные часы
-                    </a>
-                  </li>
-                </ul>
-                <ul class="navigation-catalog-submenu-list">
-                  <li class="navigation-catalog-submenu-item">
-                    <a class="navigation-catalog-submenu-link" href="#">
-                      Квадрокоптеры
-                    </a>
-                  </li>
-                </ul>
+                <a class="navigation-catalog-submenu-link" href="#">
+                  Виртуальная реальность
+                </a>
+              </li>
+              <li>
+                <a class="navigation-catalog-submenu-link" href="#">
+                  Моноподы для cелфи
+                </a>
+              </li>
+              <li>
+                <a class="navigation-catalog-submenu-link" href="#">
+                  Экшн-камеры
+                </a>
+              </li>
+              <li>
+                <a class="navigation-catalog-submenu-link" href="#">
+                  Фитнес-браслеты
+                </a>
+              </li>
+              <li>
+                <a class="navigation-catalog-submenu-link" href="#">
+                  Умные часы
+                </a>
+              </li>
+              <li>
+                <a class="navigation-catalog-submenu-link" href="#">
+                  Квадрокоптеры
+                </a>
               </li>
             </ul>
           </li>
@@ -106,5 +94,13 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <h1 class="visually hidden">
+        Интернет-магазин «Девайс»
+      </h1>
+      <section class="top products">
+
+      </section>
+    </main>
   </body>
 </html>
