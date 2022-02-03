@@ -1,0 +1,482 @@
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: Rubik, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-header {
+  background-color: #FFE17F;
+}
+
+
+.header-search-field::-webkit-input-placeholder {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.header-search-field::-moz-placeholder {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.header-search-button {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.header-menu-button {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.navigation a {
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.navigation-menu-link {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.navigation-catalog-submenu-link {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-top-product-number {
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+}
+
+.main-top-product-promo {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.main-top-product-description {
+  color: #444444;
+}
+
+.main-top-product-link{
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.main-top-product-specifications dt {
+  font-size: 16px;
+  color: #444444;
+}
+
+.main-top-product-specifications dd {
+  font-size: 36px;
+}
+
+.main-catalog-link {
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.main-catalog-virtual-reality::before {
+  display: block;
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("/images/main-catalog/main-catalog-1.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.main-catalog-monopods::before {
+  display: block;
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("/images/main-catalog/main-catalog-2.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.main-catalog-action-cameras::before {
+  display: block;
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("/images/main-catalog/main-catalog-3.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.main-catalog-fitness-bracelets::before {
+  display: block;
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("/images/main-catalog/main-catalog-4.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.main-catalog-smart-watch::before {
+  display: block;
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("/images/main-catalog/main-catalog-5.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.main-catalog-quadcopters::before {
+  display: block;
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("/images/main-catalog/main-catalog-6.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.main-catalog-item-name {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.services-button {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-description-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.services-description {
+  color: #444444;
+}
+
+.delivery {
+  background-color: #F0F0F0;
+}
+
+.delivery-description {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.company-information p {
+  color: #444444;
+}
+
+.about-us-title, .contacts-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about-us-description-item-name {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.about-us-more {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.contacts-address-title, working-hours-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #444444;
+}
+
+.contacts-address-text {
+  font-style: normal;
+}
+
+.contacts-address-phone {
+  font-style: normal;
+  color: #444444;
+}
+
+.write-to-us-link {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.newsletter-container {
+  background: #F0F0F0;
+}
+
+.newsletter-container p {
+  color: #444444;
+}
+
+.newsletter-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.newsletter-form-field::-webkit-input-placeholder {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  opacity: 0.5;
+}
+
+.newsletter-form-field::-moz-placeholder {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  opacity: 0.5;
+}
+
+.newsletter-button {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.page-footer {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+
+.footer-address-text {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-navigation-link {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  color: #FFFFFF;
+}
+
+.footer-phone-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.catalog-monopods {
+  background-color: #F0F0F0;
+}
+
+.catalog-filter-container-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.filter-control::-webkit-input-placeholder {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.filter-control::-moz-placeholder {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.catalog-filter-button {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-sorting-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.select-sorting {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.product-monopods-container {
+  background-color: #ffffff;
+}
+
+.product-monopods-image {
+  background-color: #F0F0F0;
+}
+
+.product-monopods-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.product-monopods-price {
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+}
+
+.button-pagination-show-more {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination-prev, .pagination-next {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  opacity: 0.3;
+}
