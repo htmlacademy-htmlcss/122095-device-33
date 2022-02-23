@@ -354,7 +354,7 @@ body .inner-page-header {
 }
 
 .navigation-menu-link-icon::after {
-  display: block;
+  display: block; /*none or block */
   content: "";
   width: 50px;
   height: 50px;
@@ -377,7 +377,7 @@ body .inner-page-header {
 .navigation-menu-link-icon::before {
   position: absolute;
   left: 243px;
-  display: none;
+  display: none; /*none or block */
   content: "";
   width: 50px;
   height: 50px;
@@ -405,12 +405,34 @@ body .inner-page-header {
   margin-right: 45px;
 }
 
+.header-navigation-link {
+  align-self: center;
+  padding-bottom: 2px;
+}
+
+.header-navigation-link:hover {
+  opacity: 0.6;
+}
+
+.header-navigation-link:active {
+  opacity: 0.3;
+}
+
+.header-navigation-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.header-navigation-selected {
+  border-bottom: 2px solid #000000;
+}
+
 .navigation-submenu-container {
   position: absolute;
   top: 166px;
   left: -60px;
   z-index: -1;
-  display: none; /*display:flex or none*/
+  display: none; /*Значение "display: flex или none" при нажатии на ссылку "Каталог товаров"*/
   width: 1160px;
   height: 180px;
   padding: 33px 0 0 60px;
@@ -438,8 +460,26 @@ body .inner-page-header {
 }
 
 .navigation-submenu-link {
+  padding-bottom: 2px;
   font-size: 16px;
   line-height: 18px;
+}
+
+.navigation-submenu-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-submenu-link:active {
+  opacity: 0.3;
+}
+
+.navigation-submenu-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.navigation-submenu-selected {
+  border-bottom: 2px solid #000000;
 }
 
 .main-container {
@@ -1382,7 +1422,7 @@ body .inner-page-header {
 .footer-navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 23px 0;
+  margin: 0 0 19px 0;
   padding: 0;
   list-style: none;
 }
@@ -1552,9 +1592,25 @@ body .inner-page-header {
   outline-offset: 2px;
 }
 
-
 .footer-html-logo-link {
+  display: block;
+  width: 115px;
+  height: 33px;
   margin-left: 60px;
+}
+
+.footer-html-logo-link:hover .footer-html-logo {
+  fill: #FFFFFF;
+}
+
+.footer-html-logo-link:active .footer-html-logo {
+  fill: #FFFFFF;
+  opacity: 0.3;
+}
+
+.footer-html-logo-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .page-main-inner {
@@ -1767,16 +1823,43 @@ body .inner-page-header {
   outline-offset: 2px;
 }
 
-
 .product-monopods-container {
+  width: 840px;
+  padding: 70px 40px 78px 40px;
   background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.product-monopods-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  row-gap: 44px;
+  column-gap: 40px;
+  margin: 0 0 44px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-monopods-link {
+  position: relative;
+  display: block;
 }
 
 .product-monopods-image {
+  display: block;
   background-color: #F0F0F0;
+  object-fit: contain;
+  margin-bottom: 32px;
+}
+
+.product-monopods-information-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .product-monopods-title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1784,12 +1867,44 @@ body .inner-page-header {
 }
 
 .product-monopods-price {
+  margin: 0;
   line-height: 21px;
   text-align: right;
   color: #444444;
 }
 
+.product-new::after {  /*селектор для метки "NEW" в карточке товара */
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  z-index: 1;
+  display: flex;
+  content: "NEW";
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding-left: 4px;
+  margin: 0;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
 .button-pagination-show-more {
+  display: block;
+  width: 760px;
+  height: 55px;
+  margin-bottom: 44px;
+  padding: 0;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1798,10 +1913,46 @@ body .inner-page-header {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  background-color: transparent;
+  border: 3px solid #E5E5E5;
+  box-sizing: border-box;
+}
+
+.button-pagination-show-more:hover {
+  border: 3px solid #000000;
+}
+
+.button-pagination-show-more:active {
+  border: 3px solid #000000;
+  opacity: 0.3;
+}
+
+.button-pagination-show-more:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.button-pagination-show-more:disabled {
+  opacity: 0.3;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #EBEBEB;;
 }
 
 .pagination-prev,
 .pagination-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 71px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -1811,11 +1962,67 @@ body .inner-page-header {
   color: #000000;
 }
 
-.pagination-link {
+.pagination-prev:hover,
+.pagination-next:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination-prev:active,
+.pagination-next:active {
+  background-color: #DCDCDC;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-prev:focus,
+.pagination-next:focus {
+  background-color: #F0F0F0;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.pagination-prev {
+  width: 128px;
+}
+
+.pagination-next {
+  width: 141px;
+}
+
+.pagination-end-page {
+  opacity: 0;
+}
+
+.pagination-inner-list {
+  display: flex;
+  list-style: none;
+}
+
+.pagination-inner-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-decoration-line: none;
   color: #444444;
   opacity: 0.3;
+}
+
+.pagination-inner-link:hover {
+  opacity: 1;
+}
+
+.pagination-inner-link:active {
+  opacity: 0.1;
+}
+
+.pagination-inner-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.pagination-inner-link-current {
+  opacity: 0.6;
 }
