@@ -34,11 +34,61 @@
                 Сравнить
               </button>
             </li>
-            <li class="header-menu-item">
+            <li class="header-menu-item popover-basket">
                 <button class="header-menu-button header-menu-button-basket" type="button">
                   <p class="header-menu-counter">2</p>
                   Корзина
                 </button>
+                <div class="counter-popover">
+                  <div class="counter-popover-container">
+                    <h2 class="visually-hidden">
+                      Корзина
+                    </h2>
+                    <ul class="counter-popover-list">
+                      <li class="counter-popover-item">
+                        <a class="counter-popover-link" href="#">
+                          <img class="counter-popover-image" src="images/monopods-images/monopod-1-small.jpg" width="39" height="43" alt="Cелфи-палка с кабельным подключением.">
+                          <p class="counter-popover-name">
+                            Любительская<br>
+                            селфи-палка
+                          </p>
+                        </a>
+                        <button class="counter-popover-delete-button">
+                          <span class="visually-hidden">
+                            Убрать товар из корзины
+                          </span>
+                        </button>
+                      </li>
+                      <li class="counter-popover-item">
+                        <a class="counter-popover-link" href="#">
+                          <img class="counter-popover-image" src="images/monopods-images/monopod-2-small.jpg" width="39" height="43" alt="Cелфи-палка с блютуз подключением.">
+                          <p class="counter-popover-name">
+                            Профессиональная<br>
+                            селфи-палка
+                          </p>
+                        </a>
+                        <button class="counter-popover-delete-button">
+                          <span class="visually-hidden">
+                            Убрать товар из корзины
+                          </span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="counter-popover-summary-information">
+                      <p class="counter-popover-amount-products">
+                        Товаров: 2
+                      </p>
+                      <p class="counter-popover-summary-price">
+                        Сумма: 2000 ₽
+                      </p>
+                    </div>
+                    <div class="counter-popover-button-container">
+                      <button class="counter-popover-button">
+                        Открыть корзину
+                      </button>
+                    </div>
+                  </div>
+                </div>
             </li>
           </ul>
         </div>
@@ -117,7 +167,7 @@
           Топовые товары
         </h2>
         <ul class="main-top-products-list">
-          <li class="main-top-products-item main-top-quadrocopter">
+          <li class="main-top-products-item main-top-products-item-selected">
             <article class="main-top-product">
               <h3 class="visually-hidden">
                 Квадрокоптер
@@ -145,7 +195,7 @@
               </div>
             </article>
           </li>
-          <li class="main-top-products-item main-top-bracelet">
+          <li class="main-top-products-item">
             <article class="main-top-product">
               <h3 class="visually-hidden">
                 Фитнес-браслет
@@ -171,7 +221,7 @@
               </div>
             </article>
           </li>
-          <li class="main-top-products-item main-top-monopod">
+          <li class="main-top-products-item">
             <article class="main-top-product">
               <h3 class="visually-hidden">
                 Палка для селфи
@@ -216,21 +266,21 @@
         </div>
         <div class="main-top-product-indicators-container">
           <div class="main-top-product-indicator-focus" for="top-product-indicators">
-            <button class="main-top-product-indicator main-top-product-first" type="button" id="top-product-indicators">
+            <button class="main-top-product-indicator main-top-product-indicator-selected" type="button" id="top-product-indicators">
               <span class="visually-hidden">
                 Первый продукт
               </span>
             </button>
           </div>
           <div class="main-top-product-indicator-focus" for="top-product-indicators">
-            <button class="main-top-product-indicator main-top-product-second" type="button" id="top-product-indicators">
+            <button class="main-top-product-indicator" type="button" id="top-product-indicators">
               <span class="visually-hidden">
                 Второй продукт
               </span>
             </button>
           </div>
           <div class="main-top-product-indicator-focus" for="top-product-indicators">
-            <button class="main-top-product-indicator main-top-product-third" type="button" id="top-product-indicators">
+            <button class="main-top-product-indicator" type="button" id="top-product-indicators">
               <span class="visually-hidden">
                 Третий продукт
               </span>
@@ -310,7 +360,7 @@
             </li>
           </ul>
           <ul class="services-descriptions-list">
-            <li class="services-descriptions-item services-descriptions-delivery">
+            <li class="services-descriptions-item services-descriptions-delivery services-descriptions-item-selected">
               <div class="services-descriptions-container">
                 <h3 class="services-description-title">
                   Доставка
