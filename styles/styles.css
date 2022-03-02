@@ -159,6 +159,10 @@ body .inner-page-header {
   list-style-type: none;
 }
 
+.header-menu-item {
+  position: relative;
+}
+
 .header-user-menu-container .header-user-menu-list:nth-of-type(1) {
   width: 231px;
 }
@@ -313,10 +317,6 @@ body .inner-page-header {
   line-height: 17px;
   background-color: #FFFFFF;
   border-radius: 50%;
-}
-
-.popover-basket {
-  position: relative;
 }
 
 .counter-popover {
