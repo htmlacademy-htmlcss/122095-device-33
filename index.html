@@ -39,7 +39,7 @@
                   <p class="header-menu-counter">2</p>
                   Корзина
                 </button>
-                <div class="counter-popover">
+                <article class="counter-popover counter-popover-open">
                   <div class="counter-popover-container">
                     <h2 class="visually-hidden">
                       Корзина
@@ -53,7 +53,7 @@
                             селфи-палка
                           </p>
                         </a>
-                        <button class="counter-popover-delete-button">
+                        <button class="counter-popover-delete-button" type="button">
                           <span class="visually-hidden">
                             Убрать товар из корзины
                           </span>
@@ -67,7 +67,7 @@
                             селфи-палка
                           </p>
                         </a>
-                        <button class="counter-popover-delete-button">
+                        <button class="counter-popover-delete-button" type="button">
                           <span class="visually-hidden">
                             Убрать товар из корзины
                           </span>
@@ -83,12 +83,12 @@
                       </p>
                     </div>
                     <div class="counter-popover-button-container">
-                      <button class="counter-popover-button">
+                      <button class="counter-popover-button" type="button">
                         Открыть корзину
                       </button>
                     </div>
                   </div>
-                </div>
+                </article>
             </li>
           </ul>
         </div>
@@ -573,5 +573,57 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-order">
+        <div class="modal-inner-container">
+          <h2 class="modal-title">
+            Доставка под заказ
+          </h2>
+          <button class="modal-closing-button">
+            <span class="vissualy hidden">
+              Закрыть модальное окно
+            </span>
+          </button>
+        </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="modal-field-group">
+            <label class="modal-field-title" for="modal-user-name">Ваше имя:</label>
+            <input class="modal-field-user-name" type="text" id="modal-user-name" name="user-name" placeholder="Введите имя">
+          </p>
+          <p class="modal-field-group">
+            <label class="modal-field-title" for="modal-user-email">Ваш e-mail:</label>
+            <input class="modal-field-user-email" type="email" id="modal-user-email" name="user-email" placeholder="Введите e-mail">
+          </p>
+          <p class="modal-field-group">
+            <label class="modal-field-title" for="modal-product-name">Что нужно привезти:</label>
+            <input class="modal-field-user-email" type="text" id="modal-product-name" name="user-email" placeholder="В свободной форме">
+          </p>
+          <p class="modal-field-group">
+            <label class="modal-field-title" for="modal-product-amount">
+              Количество:
+              <button class="modal-product-amount-info">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+            </label>
+            <div class="modal-field-amount-container">
+              <button class="modal-field-minus-button">
+                <span class="visually-hidden">
+                  Уменьшить количество товара
+                </span>
+              </button>
+              <input class="modal-field-product-amount" type="number" id="modal-product-amount" name="user-email" value="1" step="1">
+              <button class="modal-field-plus-button">
+                <span class="visually-hidden">
+                  Увеличить количество товара
+                </span>
+              </button>
+            </div>
+          </p>
+          <button class="modal-submit-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
