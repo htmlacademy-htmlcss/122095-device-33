@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="">
     <header class="page-header main-page-header">
       <div class="header-conteiner">
         <a class="header-logo-link" href="index.html">
@@ -17,8 +17,8 @@
               <span class="visually-hidden">Поиск по сайту</span>
               <input class="header-search-field" type="search" name="page-search" placeholder="Поиск по сайту">
             </label>
-            <div class="header-search-button-focus" for="search-button-focus">
-              <button class="header-search-button" type="submit" id="search-button-focus">Найти</button>
+            <div class="header-search-button-focus">
+              <button class="header-search-button" type="submit">Найти</button>
             </div>
           </form>
           <ul class="header-user-menu-list">
@@ -36,10 +36,10 @@
             </li>
             <li class="header-menu-item">
                 <button class="header-menu-button header-menu-button-basket" type="button">
-                  <p class="header-menu-counter">2</p>
+                  <span class="header-menu-counter">2</span>
                   Корзина
                 </button>
-                <article class="counter-popover counter-popover-open">
+                <article class="counter-popover">
                   <div class="counter-popover-container">
                     <h2 class="visually-hidden">
                       Корзина
@@ -265,22 +265,22 @@
           </button>
         </div>
         <div class="main-top-product-indicators-container">
-          <div class="main-top-product-indicator-focus" for="top-product-indicators">
-            <button class="main-top-product-indicator main-top-product-indicator-selected" type="button" id="top-product-indicators">
+          <div class="main-top-product-indicator-focus">
+            <button class="main-top-product-indicator main-top-product-indicator-selected" type="button">
               <span class="visually-hidden">
                 Первый продукт
               </span>
             </button>
           </div>
-          <div class="main-top-product-indicator-focus" for="top-product-indicators">
-            <button class="main-top-product-indicator" type="button" id="top-product-indicators">
+          <div class="main-top-product-indicator-focus">
+            <button class="main-top-product-indicator" type="button">
               <span class="visually-hidden">
                 Второй продукт
               </span>
             </button>
           </div>
-          <div class="main-top-product-indicator-focus" for="top-product-indicators">
-            <button class="main-top-product-indicator" type="button" id="top-product-indicators">
+          <div class="main-top-product-indicator-focus">
+            <button class="main-top-product-indicator" type="button">
               <span class="visually-hidden">
                 Третий продукт
               </span>
@@ -465,14 +465,14 @@
             </h3>
             <ul class="working-hours-list">
               <li class="working-hours-item">
-                <time class="working-hours-time">
-                  пн—пт: с 10:00 до 22:00
-                </time>
+                <span class="working-hours-time">
+                  пн—пт: с <time>10:00</time> до <time>22:00</time>
+                </span>
               </li>
               <li class="working-hours-item">
-                <time class="working-hours-time">
-                  сб—вс: с 10:00 до 19:00
-                </time>
+                <span class="working-hours-time">
+                  сб—вс: с <time>10:00</time> до <time>19:00</time>
+                </span>
               </li>
             </ul>
           </div>
@@ -538,22 +538,22 @@
           </ul>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <div class="social-focus-container" for="social-focus">
-                <a class="footer-social-button footer-facebook" href="https://www.facebook.com/htmlacademy" id="social-focus">
+              <div class="social-focus-container">
+                <a class="footer-social-button footer-facebook" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фейсбук</span>
                 </a>
               </div>
             </li>
             <li class="footer-social-item">
-              <div class="social-focus-container" for="social-focus">
-              <a class="footer-social-button footer-instagram" href="https://www.instagram.com/htmlacademy/" id="social-focus">
+              <div class="social-focus-container">
+              <a class="footer-social-button footer-instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
               </div>
             </li>
             <li class="footer-social-item">
-              <div class="social-focus-container" for="social-focus">
-              <a class="footer-social-button footer-twitter" href="https://twitter.com/htmlacademy_ru" id="social-focus">
+              <div class="social-focus-container">
+              <a class="footer-social-button footer-twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
               </a>
               </div>
@@ -579,46 +579,63 @@
           <h2 class="modal-title">
             Доставка под заказ
           </h2>
-          <button class="modal-closing-button">
-            <span class="vissualy hidden">
+          <button class="modal-closing-button" type="button">
+            <span class="visually-hidden">
               Закрыть модальное окно
             </span>
           </button>
         </div>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="modal-field-group">
-            <label class="modal-field-title" for="modal-user-name">Ваше имя:</label>
-            <input class="modal-field-user-name" type="text" id="modal-user-name" name="user-name" placeholder="Введите имя">
-          </p>
-          <p class="modal-field-group">
-            <label class="modal-field-title" for="modal-user-email">Ваш e-mail:</label>
-            <input class="modal-field-user-email" type="email" id="modal-user-email" name="user-email" placeholder="Введите e-mail">
-          </p>
-          <p class="modal-field-group">
-            <label class="modal-field-title" for="modal-product-name">Что нужно привезти:</label>
-            <input class="modal-field-user-email" type="text" id="modal-product-name" name="user-email" placeholder="В свободной форме">
-          </p>
-          <p class="modal-field-group">
-            <label class="modal-field-title" for="modal-product-amount">
-              Количество:
-              <button class="modal-product-amount-info">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-              </button>
-            </label>
-            <div class="modal-field-amount-container">
-              <button class="modal-field-minus-button">
-                <span class="visually-hidden">
-                  Уменьшить количество товара
+          <div class="modal-field-group-container">
+            <p class="modal-field-group">
+              <label class="modal-field-title" for="modal-user-name">
+                Ваше имя:
+              </label>
+              <input class="modal-field modal-field-user-name" type="text" id="modal-user-name" name="user-name" placeholder="Введите имя">
+              <span class="modal-field-user-name-prompt">
+                Добавьте имя
+              </span>
+            </p>
+            <p class="modal-field-group">
+              <label class="modal-field-title" for="modal-user-email">Ваш e-mail:</label>
+              <input class="modal-field modal-field-user-email" type="email" id="modal-user-email" name="user-email" placeholder="Введите e-mail">
+              <span class="modal-field-user-email-prompt">
+                Забавный у вас адрес
+              </span>
+            </p>
+          </div>
+          <div class="modal-field-group-container">
+            <p class="modal-field-group">
+              <label class="modal-field-title" for="modal-product-name">
+                Что нужно привезти:
+              </label>
+              <input class="modal-field modal-field-product-name" type="text" id="modal-product-name" name="product-name" placeholder="В свободной форме">
+            </p>
+            <p class="modal-field-group">
+              <label class="modal-field-title modal-field-amount-label">
+                Количество:
+                <button class="modal-product-amount-info" type="button">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+                <span class="modal-product-amount-info-text">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
                 </span>
-              </button>
-              <input class="modal-field-product-amount" type="number" id="modal-product-amount" name="user-email" value="1" step="1">
-              <button class="modal-field-plus-button">
-                <span class="visually-hidden">
-                  Увеличить количество товара
-                </span>
-              </button>
-            </div>
-          </p>
+              </label>
+              <span class="modal-field-amount-container">
+                <button class="modal-field-minus-button" type="button">
+                  <span class="visually-hidden">
+                    Уменьшить количество товара
+                  </span>
+                </button>
+                <input class="modal-field-product-amount" type="number" name="product-amount" value="1" min="1" max="100" step="1">
+                <button class="modal-field-plus-button" type="button">
+                  <span class="visually-hidden">
+                    Увеличить количество товара
+                  </span>
+                </button>
+              </span>
+            </p>
+          </div>
           <button class="modal-submit-button" type="submit">
             Отправить
           </button>
