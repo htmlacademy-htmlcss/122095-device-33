@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header inner-page-header">
       <div class="header-conteiner">
         <a class="header-logo-link" href="index.html">
-          <img class="header-logo" src="images/header-logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс».">
+          <img src="images/header-logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс».">
         </a>
         <div class="header-user-menu-container">
           <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -101,7 +103,7 @@
           <ul class="navigation-menu-list">
             <li class="navigation-menu-item">
               <a class="navigation-menu-link navigation-menu-link-icon" href="#">
-                Каталог товаров
+                <span class="navigation-menu-link-text">Каталог товаров</span>
               </a>
               <div class="navigation-submenu-container">
                 <ul class="navigation-submenu-list">
@@ -195,7 +197,7 @@
             <h3 class="catalog-filter-container-title">
               фильтр:
             </h3>
-            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+            <form action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">
                   Стоимость
@@ -213,10 +215,12 @@
                   </div>
                   <div class="catalog-filter-range-inputs">
                     <label class="catalog-filter-range-label catalog-filter-min-price">
-                      от <input class="range-input" type="number" value="0" min="0" max="5000" step="1" name="min-price">
+                      <span class="catalog-filter-range-text">от</span>
+                      <input class="range-input" type="number" value="0" min="0" max="5000" step="1" name="min-price">
                     </label>
                     <label class="catalog-filter-range-label catalog-filter-max-price">
-                      до <input class="range-input" type="number" value="5000" min="0" max="5000" step="1" name="max-price">
+                      <span class="catalog-filter-range-text">до</span>
+                        <input class="range-input" type="number" value="5000" min="0" max="5000" step="1" name="max-price">
                     </label>
                   </div>
                 </div>
@@ -289,7 +293,7 @@
               </button>
             </form>
           </div>
-          <div class="catalog-monopods-right-column">
+          <div>
             <div class="catalog-sorting-container">
               <h3 class="catalog-sorting-title">
                 сортировка:
@@ -300,14 +304,14 @@
                 <option value="expensive">Дорогие</option>
               </select>
               <ul class="catalog-sorting-list">
-                <li class="catalog-sorting-item">
+                <li>
                   <button class="catalog-sorting-bottom catalog-sorting-bottom-ascending" type="button">
                     <span class="visually-hidden">
                       Сортировать по возрастанию
                     </span>
                   </button>
                 </li>
-                <li class="catalog-sorting-item">
+                <li>
                   <button class="catalog-sorting-bottom catalog-sorting-bottom-descending" type="button">
                     <span class="visually-hidden">
                       Сортировать по убыванию
@@ -449,17 +453,17 @@
         <div class="footer-lists-container">
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link footer-delivery" href="#">
+              <a class="footer-navigation-link" href="#">
                 Доставка
               </a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link footer-guarantee" href="#">
+              <a class="footer-navigation-link" href="#">
                 Гарантия
               </a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link footer-contacts" href="#">
+              <a class="footer-navigation-link" href="#">
                 Контакты
               </a>
             </li>
