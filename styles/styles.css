@@ -66,7 +66,7 @@ body .inner-page-header {
   padding-bottom: 13px;
 }
 
-.header-conteiner {
+.header-container {
   position: relative;
   z-index: 1;
   width: 1040px;
@@ -1690,7 +1690,7 @@ body .inner-page-header {
   margin-bottom: 35px;
 }
 
-.footer-adress-conteiner {
+.footer-adress-container {
   width: 239px;
   margin: 62px 112px 0 0;
 }
@@ -1706,7 +1706,7 @@ body .inner-page-header {
   margin-bottom: 64px;
 }
 
-.footer-adress-conteiner::after {
+.footer-adress-container::after {
   display: block;
   content: " ";
   width: 80px;
@@ -3089,10 +3089,6 @@ body.modal-window-open {
 .pagination-next {
   min-width: 141px;
   max-width: 170px;
-}
-
-.pagination-end-page {
-  opacity: 0;
 }
 
 .pagination-inner-list {
